@@ -17,6 +17,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Live Server][live-server-shield]][live-server]
+[![Live Sass][live-sass-shield]][live-sass]
+[![Bracket Pair Colorizer][bracket-pair-shield]][bracket-pair]
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -181,6 +184,9 @@ Distributed under the MIT License. See [***`LICENSE`***][license-url] for more i
 [fork]:https://github.com/DevilStudio27/wedding-blazer-product-ui/network/members
 
 [vs-code]:https://code.visualstudio.com/
+[live-server-shield]:https://img.shields.io/visual-studio-marketplace/i/ritwickdey.liveserver?label=Live%20Server&logo=visual-studio-code&logoColor=cyan&style=flat-square
 [live-server]:https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+[live-sass-shield]:https://img.shields.io/visual-studio-marketplace/i/ritwickdey.live-sass?label=Live%20Sass&logo=visual-studio-code&logoColor=cyan&style=flat-square
 [live-sass]:https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
+[bracket-pair-shield]:https://img.shields.io/visual-studio-marketplace/i/coenraads.bracket-pair-colorizer-2?label=Bracket%20Pair%20Colorizer%202&logo=visual-studio-code&logoColor=cyan&style=flat-square
 [bracket-pair]:https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2

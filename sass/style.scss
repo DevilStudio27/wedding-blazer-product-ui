@@ -1,0 +1,288 @@
+@import "mixin";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    @include flx;
+    background: linear-gradient(to right, #ccc, #ddd);
+}
+.card
+{
+    position: relative;
+    width: 270px;
+    height: 400px;
+    background: #eee;
+    border: 1.5px solid #e30c30;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba($color: #000000, $alpha: 0.2);
+    font-family: "Calibri", sans-serif;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    
+    .img-wrapper
+    {
+        height: 290px;
+        margin: 5px 0;
+        @include flx;
+        transition: all 0.3s;
+        
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content
+    {
+        transition: all 0.3s;
+
+        .title
+        {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.11rem;
+            margin: 5px 0;
+        }
+        .cat
+        {
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+        }
+        .price
+        {
+            margin: 5px 0 15px;
+            color: #e30c30;
+            letter-spacing: 0.15rem;
+            font-size: 1.55rem;
+            font-weight: 800;
+            transition: all 0.3s;
+        }
+
+        .inner-content
+        {
+            transition: all 0.3s;
+
+            .size-container
+            {
+                margin-bottom: 10px;
+                @include flx;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s;
+
+                .in-title
+                {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    letter-spacing: 0.03rem;
+                }
+                .br
+                {
+                    margin: 0 2px;
+                    height: 15px;
+                    width: 2px;
+                    background: #333;
+                    border-radius: 2px;
+                }
+                .size
+                {
+                    display: inline-block;
+                    font-size: 1rem;
+                    margin: 0 8px;
+
+                    &:not(.active)
+                    {
+                        cursor: pointer;
+                        font-weight: 800;
+                    }
+
+                    &.active
+                    {
+                        color: #888;
+                    }
+                }
+            }
+
+            .color-container
+            {
+                margin-bottom: 15px;
+                @include flx;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s;
+
+                .in-title
+                {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    letter-spacing: 0.03rem;
+                    margin-left: 10px;
+                }
+
+                .color
+                {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid #e30c30;
+                    margin: 0 5px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+
+                    &.active
+                    {
+                        transform: scale(1.2);
+                    }
+
+                    &:hover
+                    {
+                        border-color: #fff;
+                    }
+
+                    &[color="black"]
+                    {
+                        background: #111;
+                    }
+                    &[color="red"]
+                    {
+                        background: #bc1b32;
+                    }
+                    &[color="white"]
+                    {
+                        background: #e4e5ea;
+                    }
+                    &[color="navy-blue"]
+                    {
+                        background: #3b3753;
+                    }
+                    &[color="khaki"]
+                    {
+                        background: #b59083;
+                    }
+                }
+            }
+
+            .icons
+            {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 10px 0 0;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s;
+
+                .icon
+                {
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    transition: all 0.2s;
+
+                    &.web
+                    {
+                        color: #3db2ff;
+                    }
+                    &.cart
+                    {
+                        color: #6558ff;
+                    }
+                    &.wishlist
+                    {
+                        color: #bc1b32;
+                    }
+
+                    &:hover
+                    {
+                        color: #e30c30;
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+
+    .priceBx::before
+    {
+        position: absolute;
+        content: '$ 17.99';
+        @include flx;
+        background: #e30c30;
+        width: 100px;
+        height: 25px;
+        letter-spacing: 0.11rem;
+        font-size: 1.25rem;
+        color: #fff;
+        padding-top: 10px;
+        transform-origin: center top;
+        transform: rotate(90deg);
+        right: -95px;
+        top: 210px;
+        z-index: 1;
+        border-radius: 0 0 5px 5px;
+        transition: all 0.3s ease;
+    }
+
+    &:hover
+    {
+        .img-wrapper
+        {
+            transform-origin: center top;
+            transform: scale(0.65) translateY(10px);
+        }
+
+        .priceBx::before
+        {
+            padding-top: 45px;
+        }
+
+        .content
+        {
+            transform: translateY(-80px);
+
+            .title
+            {
+                color: #e30c30;
+            }
+
+            .cat
+            {
+                color: #e30c30;
+            }
+
+            .price
+            {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .inner-content
+            {
+                transform: translateY(-40px);
+
+                .size-container,
+                .color-container,
+                .icons
+                {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+}

@@ -17,6 +17,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+<br>
+
 [![Live Server][live-server-shield]][live-server]
 [![Live Sass][live-sass-shield]][live-sass]
 [![Bracket Pair Colorizer][bracket-pair-shield]][bracket-pair]

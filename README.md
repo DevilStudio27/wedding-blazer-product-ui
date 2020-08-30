@@ -150,7 +150,6 @@ Distributed under the MIT License. See [***`LICENSE`***][license-url] for more i
 * [*Twitter*](https://twitter.com/devil_2708)
 * [*Gmail*](sahilthakur376@gmail.com)
 
-Project Link:  [Wedding Blazer Product UI][project-link]
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -175,7 +174,6 @@ Project Link:  [Wedding Blazer Product UI][project-link]
 [license-shield]: https://img.shields.io/github/license/devilstudio27/wedding-blazer-product-ui?logo=github&logoColor=cyan&style=flat-square
 [license-url]: https://github.com/DevilStudio27/wedding-blazer-product-ui/blob/master/LICENSE
 
-[project-link]:(https://github.com/DevilStudio27/wedding-blazer-product-ui)
 
 [product-screenshot]: screenshots/Dashboard.jpg
 
